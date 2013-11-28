@@ -1,0 +1,195 @@
+@import url(http://fonts.googleapis.com/css?family=Exo:200,300,400,500,600,700);
+
+@-webkit-viewport {
+    width: device-width;
+}
+@-moz-viewport {
+    width: device-width;
+}
+@-ms-viewport {
+    width: device-width;
+}
+
+@-o-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: rgb(65, 174, 189);
+    color: #f2f2f2;
+    font-family: 'Raleway', 'Segoe UI', sans-serif;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Raleway', 'Segoe UI', sans-serif;
+}
+
+a:link {
+    color: #ffff00;
+}
+
+a:visited {
+    color: #ffaf00;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by its height */
+    margin: 0 auto -60px;
+    /* Pad bottom by footer height */
+    padding: 0 0 60px;
+}
+
+#content {
+    padding-top: 50px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+    height: 60px;
+    background-color: rgb(184, 255, 218);
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+#welcome-screen {
+    background-color: rgb(65, 174, 189);
+    height: 700px;
+    margin-bottom: 0;
+}
+
+#welcome-screen .container {
+    padding-top: 75px;
+}
+
+#welcome-screen .welcome-logo {
+    width: auto;
+}
+
+#welcome-screen .welcome-desc {
+    padding-top: 150px;
+    margin-right: auto;
+}
+
+/*#wrap > .container {
+    padding: 60px 15px 0;
+}*/
+
+#registerform {
+    background-color: #262626;
+    height: 800px;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    padding-top: 150px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+.form-signin .checkbox {
+    font-weight: normal;
+}
+.form-signin .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+.form-signin input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.form-signin input[placeholder="Email address"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.container .credit {
+    padding: 20px 20px 0;
+}
+
+#footer {
+    border-color: #333;
+    border-top: 1px solid;
+}
+
+#footer > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#footer .container .credit #somestuff {
+    vertical-align:middle;
+    float: right
+}
+
+code {
+    font-size: 80%;
+}
+
+/**** Responsive ajdbsha */
+
+@media (max-width: 768px) {
+    #welcome-screen .welcome-desc {
+        font-size: medium;
+    }
+
+    /* Bump up size of carousel content */
+    #footer {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    #footer .container .credit #somestuff {
+        float: none;
+    }
+}
+
+@media (max-width: 480px) {
+    #welcome-screen .welcome-desc {
+        padding-top: 25px;
+        font-size: medium;
+    }
+
+    #welcome-screen .welcome-logo {
+        float: none;
+    }
+
+    #welcome-screen .container {
+        padding-top: 0;
+    }
+}
+
+@media (max-height: 480px) {
+    #footer {
+        visibility: hidden;
+    }
+}
