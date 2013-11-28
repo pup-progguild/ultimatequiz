@@ -82,9 +82,9 @@
 <div id="footer">
 	<div class="container">
 		<div class="row credit">
-			<div class="col-sm-12"><p class="text-muted">Baked
+			<div class="col-lg-12"><p class="text-muted">Baked
 					by <?php echo $this->Html->image('PUP-PG_23px-dark.png', [ 'url' => 'https://www.facebook.com/PupProgrammingGuild',
-					                                                    'id'    => 'pup-progguild' ]) ?></p>
+					                                                         'id'    => 'pup-progguild' ]) ?></p>
 			</div>
 		</div>
 	</div>
