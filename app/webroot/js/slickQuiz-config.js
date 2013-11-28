@@ -103,7 +103,7 @@ var quizJSON = {
             "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
         },
         { // Question 1 - Multiple Choice, Single True Answer
-            "q": "When \"11\" is inserted in the min-heap shown below, which of the following min-heaps is created? Here, a new node is first placed at the bottom (or last) of the tree, and then it is shifted up to its proper place to maintain the min-heap structure.<br /><img class='img-responsive' src='img/quiz/binarytree1.PNG'>",
+            "q": "When \"11\" is inserted in the min-heap shown below, which of the following min-heaps is created? Here, a new node is first placed at the bottom (or last) of the tree, and then it is shifted up to its proper place to maintain the min-heap structure.<br /><br /><img class='img-responsive' src='img/quiz/binarytree1.PNG'>",
             "a": [
                 {"option": "<img class='img-responsive' src='img/quiz/binarytree1a.PNG'>", "correct": false},
                 {"option": "<img class='img-responsive' src='img/quiz/binarytree1b.PNG'>", "correct": true},
@@ -401,10 +401,245 @@ var quizJSON = {
                 "</tbody>" +
                 "</table></div>",
             "a": [
-                {"option": "a)", "correct": true},
+                {"option": "a)", "correct": false},
                 {"option": "b)", "correct": false},
-                {"option": "c)", "correct": false},
+                {"option": "c)", "correct": true},
                 {"option": "d)", "correct": false} // no comma here
+            ],
+            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
+            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+        },
+        { // Question 1 - Multiple Choice, Single True Answer
+            "q": "As shown below, when the SQL statement is executed on the relational database table \"Staff\", which of the following tables is created?<br /><br /><pre>SELECT StaffID, BranchID FROM Staff WHERE BranchID = 'B03' " +
+                "UNION " +
+                "SELECT StaffID, BranchID FROM Staff WHERE Salary > 5000;</pre><br/>Staff" +
+                "<div class='table-responsive'><table class='table table-condensed'>" +
+                "<thead><tr><th>StaffID</th><th>Salary</th><th>BranchID</th></tr></thead>" +
+                "<tbody>" +
+                "<tr><td>S01</td><td>2000</td><td>B01</td></tr>" +
+                "<tr><td>S02</td><td>4000</td><td>B01</td></tr>" +
+                "<tr><td>S03</td><td>3000</td><td>B03</td></tr>" +
+                "<tr><td>S04</td><td>8000</td><td>B03</td></tr>" +
+                "<tr><td>S05</td><td>3000</td><td>B03</td></tr>" +
+                "<tr><td>S06</td><td>4000</td><td>B07</td></tr>" +
+                "<tr><td>S07</td><td>6000</td><td>B08</td></tr>" +
+                "</tbody>" +
+                "</table></div>",
+            "a": [
+                {"option": "<div class='table-responsive'><table class='table'>" +
+                    "<thead><tr><th>StaffID</th><th>BranchID</th></tr></thead>" +
+                    "<tbody>" +
+                    "<tr><th>S04</th><th>B03</th></tr>" +
+                    "</tbody></table> " +
+                    "</div>", "correct": false},
+                {"option": "<div class='table-responsive'><table class='table'>" +
+                    "<thead><tr><th>StaffID</th><th>BranchID</th></tr></thead>" +
+                    "<tbody>" +
+                    "<tr><th>S03</th><th>B03</th></tr>" +
+                    "<tr><th>S04</th><th>B03</th></tr>" +
+                    "<tr><th>S05</th><th>B03</th></tr>" +
+                    "<tr><th>S07</th><th>B08</th></tr>" +
+                    "</tbody></table> " +
+                    "</div>", "correct": true},
+                {"option": "<div class='table-responsive'><table class='table'>" +
+                    "<thead><tr><th>StaffID</th><th>BranchID</th></tr></thead>" +
+                    "<tbody>" +
+                    "<tr><th>S03</th><th>B03</th></tr>" +
+                    "<tr><th>S04</th><th>B03</th></tr>" +
+                    "<tr><th>S05</th><th>B03</th></tr>" +
+                    "<tr><th>S04</th><th>B03</th></tr>" +
+                    "<tr><th>S07</th><th>B08</th></tr>" +
+                    "</tbody></table> " +
+                    "</div>", "correct": false},
+                {"option": "<div class='table-responsive'><table class='table'>" +
+                    "<thead><tr><th>StaffID</th><th>BranchID</th></tr></thead>" +
+                    "<tbody>" +
+                    "<tr><th>S03</th><th>B03</th></tr>" +
+                    "<tr><th>S04</th><th>B03</th></tr>" +
+                    "<tr><th>S05</th><th>B03</th></tr>" +
+                    "<tr><th>S03</th><th>B08</th></tr>" +
+                    "<tr><th>S04</th><th>B08</th></tr>" +
+                    "<tr><th>S05</th><th>B08</th></tr>" +
+                    "<tr><th>S07</th><th>B03</th></tr>" +
+                    "<tr><th>S07</th><th>B08</th></tr>" +
+                    "</tbody></table> " +
+                    "</div>", "correct": false} // no comma here
+            ],
+            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
+            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+        },
+        { // Question 1 - Multiple Choice, Single True Answer
+            "q": "Which of the following is the appropriate flow of execution of SQL statements?",
+            "a": [
+                {"option": "\\(Code\\;generation\\rightarrow Optimization \\rightarrow Decomposition \\rightarrow Execution\\)", "correct": false},
+                {"option": "\\(Decomposition \\rightarrow Code\\;generation\\rightarrow Optimization \\rightarrow Execution\\)", "correct": false},
+                {"option": "\\(Decomposition \\rightarrow Optimization \\rightarrow Code\\;generation\\rightarrow Execution\\)", "correct": true},
+                {"option": "\\(Optimization \\rightarrow Decomposition \\rightarrow Code\\;generation\\rightarrow Execution\\)", "correct": false} // no comma here
+            ],
+            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
+            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+        },
+        { // Question 1 - Multiple Choice, Single True Answer
+            "q": "In a relational database system, which of the following is an appropriate purpose of recording changes in a database file as a journal file?",
+            "a": [
+                {"option": "To determine whether to commit or roll back the database updates", "correct": false},
+                {"option": "To enable recovery to be undertaken effectively in the event of a failure", "correct": true},
+                {"option": "To move transaction log records to the database backup files", "correct": false},
+                {"option": "To support concurrency control of the simultaneous execution of transactions", "correct": false} // no comma here
+            ],
+            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
+            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+        },
+        { // Question 1 - Multiple Choice, Single True Answer
+            "q": "Which of the following is the most appropriate description concerning the exclusive control of a DBMS?",
+            "a": [
+                {"option": "Exclusive control is necessary for data that might be updated simultaneously by several people.", "correct": true},
+                {"option": "Exclusive control is necessary for improving the processing speed of data that is frequently accessed.", "correct": false},
+                {"option": "Exclusive control is necessary for preventing the occurrence of a deadlock when data is accessed.", "correct": false},
+                {"option": "In order to improve the processing speed, the range of the data on which exclusive control is performed must be made as wide as possible.", "correct": false} // no comma here
+            ],
+            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
+            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+        },
+        { // Question 1 - Multiple Choice, Single True Answer
+            "q": "When an optical fiber cable is used for data communication, which of the following is the approximate bandwidth (in units of THz) of the light within the range of wavelength from 1000 to 1400 nanometers? Here, in consideration of data transmission efficiency and such other factors, the effective speed of the light on the optical fiber cable can be assumed to be 2×10<sup>8</sup> m/s.",
+            "a": [
+                {"option": "50", "correct": false},
+                {"option": "57", "correct": true},
+                {"option": "75", "correct": false},
+                {"option": "86", "correct": false} // no comma here
+            ],
+            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
+            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+        },
+        { // Question 1 - Multiple Choice, Single True Answer
+            "q": "Which of the following is an appropriate description concerning interconnection devices between LANs?",
+            "a": [
+                {"option": "The bridge relays frames based on the IP address.", "correct": false},
+                {"option": "The gateway converts the protocols of only the first through third layers of the OSI basic reference model.", "correct": false},
+                {"option": "The repeater extends the transmission distance by amplifying signals between the same types of segments.", "correct": true},
+                {"option": "The router relays frames based on the MAC address.", "correct": false} // no comma here
+            ],
+            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
+            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+        },
+        { // Question 1 - Multiple Choice, Single True Answer
+            "q": "Among the layers of the OSI basic reference model, which of the following is the appropriate layer that is primarily responsible for the translation, encryption, and compression of data?",
+            "a": [
+                {"option": "Data link layer", "correct": false},
+                {"option": "Physical layer", "correct": false},
+                {"option": "Presentation layer", "correct": true},
+                {"option": "Session layer", "correct": false} // no comma here
+            ],
+            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
+            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+        },
+        { // Question 1 - Multiple Choice, Single True Answer
+            "q": "In a TCP/IP network using IPv4 addresses, which of the following is an effective IP address that can be allocated to a network device?",
+            "a": [
+                {"option": "172.16.5.0/40", "correct": false},
+                {"option": "192.168.251.256/25", "correct": false},
+                {"option": "203.164.15.9/28", "correct": true},
+                {"option": "252.169.15.40/30", "correct": false} // no comma here
+            ],
+            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
+            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+        },
+        { // Question 1 - Multiple Choice, Single True Answer
+            "q": "Which of the following is an appropriate explanation of POP3 that is used in an e-mail system?",
+            "a": [
+                {"option": "It is a protocol used by the user to send an e-mail.", "correct": false},
+                {"option": "It is a protocol used to authenticate a user based on the user ID and password after the establishment of a PPP link.", "correct": false},
+                {"option": "It is a protocol used to exchange e-mail messages between mail servers.", "correct": false},
+                {"option": "It is a protocol used to retrieve e-mails from the mailbox of a mail server.", "correct": true} // no comma here
+            ],
+            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
+            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+        },
+        { // Question 1 - Multiple Choice, Single True Answer
+            "q": "A PKI involves two types of key pairs: signature key pairs, in which the private key is used for signing and the public key for checking; and exchange key pairs, in which the public key is used by an application to encrypt data, and the private key is used to decrypt the encrypted data. Which of the following is the key pair(s) that may be escrowed or backed up to prevent the loss of important data even when the corresponding key or keys are forgotten?",
+            "a": [
+                {"option": "Both exchange key pair and signature key pair", "correct": false},
+                {"option": "Either exchange key pair or signature key pair depending on conditions", "correct": false},
+                {"option": "Exchange key pair", "correct": true},
+                {"option": "Signature key pair", "correct": false} // no comma here
+            ],
+            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
+            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+        },
+        { // Question 1 - Multiple Choice, Single True Answer
+            "q": "Which of the following can be achieved by receiving an e-mail text and its hash value from the sender, and then comparing this hash value with another hash value calculated by the recipient from the e-mail text? Here, the hash value that the recipient receives from the sender is correct.",
+            "a": [
+                {"option": "Checking the delivery of the e-mail", "correct": false},
+                {"option": "Detecting the presence or absence of falsification in the e-mail text", "correct": true},
+                {"option": "Preventing spoofing", "correct": false},
+                {"option": "Preventing wiretapping of the e-mail text", "correct": false} // no comma here
+            ],
+            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
+            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+        },
+        { // Question 1 - Multiple Choice, Single True Answer
+            "q": "Which of the following is a security measure where it is effective to confirm the destination address with the sender when an e-mail is sent?",
+            "a": [
+                {"option": "A preventive measure against unauthorized relay of e-mail", "correct": false},
+                {"option": "A preventive measure against wrong transmission of e-mail", "correct": true},
+                {"option": "Anti-spam measure using OP25B", "correct": false},
+                {"option": "Anti-spam measure using SPF", "correct": false} // no comma here
+            ],
+            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
+            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+        },
+        { // Question 1 - Multiple Choice, Single True Answer
+            "q": "Which of the following is the purpose of using a WAF (Web Application Firewall)?",
+            "a": [
+                {"option": "To block attacks to a vulnerability arising from a Web server and an application", "correct": true},
+                {"option": "To detect the intrusion of a worm in a Web server and remove the worm automatically", "correct": false},
+                {"option": "To detect vulnerabilities and inconsistencies of applications in an integration test during content development for a Web server", "correct": false},
+                {"option": "To find security holes of a Web server and apply OS security patches", "correct": false} // no comma here
+            ],
+            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
+            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+        },
+        { // Question 1 - Multiple Choice, Single True Answer
+            "q": "As a security measure on the Internet, a type of challenge-response test called a CAPTCHA can be used to determine whether the client is a human or a computer program. Which of the following is an appropriate purpose of using such a measure?",
+            "a": [
+                {"option": "To protect against a relay attack", "correct": false},
+                {"option": "To protect against a virus or a worm", "correct": false},
+                {"option": "To protect against automated spamming", "correct": true},
+                {"option": "To protect against spyware or adware", "correct": false} // no comma here
+            ],
+            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
+            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+        },
+        { // Question 1 - Multiple Choice, Single True Answer
+            "q": "Which of the following is an appropriate description concerning a use case diagram in UML?",
+            "a": [
+                {"option": "It is used to describe the sequence of states that an object goes through in response to external events.", "correct": false},
+                {"option": "It is used to model the functional, informational, behavioral, and organizational workflow perspectives.", "correct": false},
+                {"option": "It is used to represent mutual actions by means of messages sent and received between objects.", "correct": false},
+                {"option": "It is used to show what system functions are performed for which actor, from the user’s perspective.", "correct": true} // no comma here
+            ],
+            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
+            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+        },
+        { // Question 1 - Multiple Choice, Single True Answer
+            "q": "During system development, a domain model is often created as part of the business modeling activities. Among the diagrams in UML, which of the following is the diagram that contains the implementation view of the entities in the domain model?",
+            "a": [
+                {"option": "Class diagram", "correct": true},
+                {"option": "Communication diagram", "correct": false},
+                {"option": "Object diagram", "correct": false},
+                {"option": "Use case diagram", "correct": false} // no comma here
+            ],
+            "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
+            "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+        },
+        { // Question 1 - Multiple Choice, Single True Answer
+            "q": "In UML, the state machine diagram (previously called statechart diagram) is used for describing the state machine model of a target system. Which of the following is an appropriate description of the state machine diagram?",
+            "a": [
+                {"option": "It shows how data flows in the system through a sequence of processes.", "correct": true},
+                {"option": "It shows how the system responds to internal and external events.", "correct": false},
+                {"option": "It shows relationships among objects in the system at a point in time.", "correct": false},
+                {"option": "It shows the flow of events from one activity to another.", "correct": false} // no comma here
             ],
             "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
             "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here

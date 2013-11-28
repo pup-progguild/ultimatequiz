@@ -8,7 +8,9 @@ $(function () {
         'randomSortQuestions' : true,
         'randomSortAnswers' : true,
         'preventUnanswered' : false,
-        'perQuestionResponseMessaging' : false
+        'perQuestionResponseMessaging' : false,
+        'backButtonText' : 'Previous Question',
+        'nextQuestionText' : 'Next Question'
     };
     $('#slickQuiz').slickQuiz(options);
 });
