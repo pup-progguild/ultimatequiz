@@ -6,7 +6,7 @@ var quizJSON = {
     "info": {
         "name": "The Ultimate QUIZ!!",
         "main": "<p>Think you're smart enough to be on the CCIS Quiz Show? Find out with this super crazy knowledge quiz!</p>",
-        "results": "<h2>Congratulations!</h2><p>We know you did a great job at trying not to cheat (really) and get here, but there might be more skillfull hackers out there who ought to be the next CCIS Quiz Show Champion. Well, just wait and we'll tell you if your team got it into the final round. Good luck! :D</p>",
+        "results": "<h2>Aaaaaand...</h2><p>The END! Are the questions too hard? Yes. They are.</p><p>We know you did a great job at trying not to cheat (really) and get here, but there might be more skillfull hackers out there who ought to be the next CCIS Quiz Show Champion. Well, just wait and we'll tell you if your team got it into the final round. Good luck! :D</p>",
         "level1": "Cheater or not, you still made it here. Good luck.",
         "level2": "Wicked. Hang on and we might contact you for being a contestant at the quiz show. We might, tho. :D",
         "level3": "ALMOST THERE. Just hope that they can't do better than you did.",
@@ -144,12 +144,12 @@ var quizJSON = {
             "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
         },
         { // Question 1 - Multiple Choice, Single True Answer
-            "q": "Which of the following is the appropriate description of the \"selection sort\" algorithm?",
+            "q": "Which of the following is the software development process model that aims to achieve a high degree of completion of a system by dividing the system into some subsystems and repeating the development cycle for each subsystem in consideration of minimizing the risk in each cycle?",
             "a": [
-                {"option": "An intermediate reference value is determined, and then the elements are divided into two groups of \"larger\" values and \"smaller\" values. This operation is recursively repeated.", "correct": false},
-                {"option": "Each set of the elements extracted at regular intervals is sorted, and then the interval is further decreased. The operation is repeatedly performed until the interval becomes 1.", "correct": false},
-                {"option": "The element with the largest value is determined and swapped for the last element, and then the largest value of the unsorted elements is determined and swapped for the second-to-the-last element. This operation is repeated in the same way.", "correct": true},
-                {"option": "Two adjacent elements are repeatedly compared and swapped if the first element is larger than the second. This operation is repeated until all elements are arranged in an orderly fashion.", "correct": false} // no comma here
+                {"option": "Evolutional model", "correct": false},
+                {"option": "Incremental model", "correct": false},
+                {"option": "Spiral model", "correct": true},
+                {"option": "Waterfall model", "correct": false} // no comma here
             ],
             "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
             "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
@@ -217,34 +217,34 @@ var quizJSON = {
             "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
         },
         { // Question 1 - Multiple Choice, Single True Answer
-            "q": "Which of the following is the most appropriate explanation of cloud computing",
+            "q": "The arrow diagram shown below is created for time management of a project. Which of the following is the critical path?<br/><br/><img src='img/quiz/critpath1.PNG' class='img-responsive'>",
             "a": [
-                {"option": "It accumulates the computational capacity of several PCs so that a computational capacity of the same level as a supercomputer can be achieved.", "correct": false},
-                {"option": "It connects all electric appliances to a network as intelligent products so that these devices can be monitored and operated at any time and from any place.", "correct": false},
-                {"option": "It enables PCs on a network to communicate with each other based on an equal relationship, without the use of a specific server.", "correct": false},
-                {"option": "It provides the resources of a computer via a network so that the user can easily receive services with high scalability and availability.", "correct": true} // no comma here
+                {"option": "\\(A\\rightarrow C \\rightarrow E \\rightarrow F\\)", "correct": false},
+                {"option": "\\(B\\rightarrow E \\rightarrow F\\)", "correct": false},
+                {"option": "\\(A\\rightarrow D \\rightarrow G\\)", "correct": true},
+                {"option": "\\(B\\rightarrow E \\rightarrow G\\)", "correct": false} // no comma here
             ],
             "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
             "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
         },
         { // Question 1 - Multiple Choice, Single True Answer
-            "q": "Which of the following is an essential activity for achieving a fault tolerant system?",
+            "q": "Which of the following is a chart or a diagram that is often used in quality control to rank issues or problems in descending order of frequency?",
             "a": [
-                {"option": "Automatically recording the history, such as the change information of the database, during the system operation in order to perform cause analysis and recovery when a failure occurs in the system", "correct": false},
-                {"option": "Designing simple operations in which operational errors do not occur easily, or designing an operation in such a way that even if an operational error occurs, it does not result in a fatal error", "correct": false},
-                {"option": "Providing redundancy for a system configuration to minimize the effect of a component failure so that the processing can be continued without any effect on the overall system", "correct": true},
-                {"option": "Taking a data backup periodically so that after the occurrence of a failure the state prior to the failure can be restored promptly in an alternate system environment", "correct": false} // no comma here
+                {"option": "Cause-and-effect diagram", "correct": false},
+                {"option": "Control chart", "correct": false},
+                {"option": "Pareto chart", "correct": true},
+                {"option": "Scatter diagram", "correct": false} // no comma here
             ],
             "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
             "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
         },
         { // Question 1 - Multiple Choice, Single True Answer
-            "q": "In reliability design, which of the following is an appropriate example of fail-soft?",
+            "q": "Which of the following is a service delivery process that is defined, agreed, recorded, and managed in IT service management?",
             "a": [
-                {"option": "In a system with a cluster configuration, even when a server does not work, another server takes over applications and provides functions.", "correct": true},
-                {"option": "In order not to lose data even when an application is shut down by mistake, the application regularly saves a copy of data on a storage device during editing.", "correct": false},
-                {"option": "In order not to stop a system because of partial functional failures, the system is composed only of hardware and software that are fully verified and highly reliable.", "correct": false},
-                {"option": "On the input screen of a reception system that requires an e-mail reply, two input fields for the e-mail address are provided and checked to see if they are the same.", "correct": false} // no comma here
+                {"option": "Quality management", "correct": false},
+                {"option": "Risk management", "correct": false},
+                {"option": "Schedule management", "correct": false},
+                {"option": "Service level management", "correct": true} // no comma here
             ],
             "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
             "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
