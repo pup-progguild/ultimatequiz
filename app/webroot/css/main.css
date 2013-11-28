@@ -23,12 +23,12 @@ body {
     height: 100%;
     background-color: rgb(86, 239, 255);
     color: #333;
-    font-family: 'Raleway', 'Segoe UI', sans-serif;
+    font-family: 'Exo', 'Segoe UI', sans-serif;
     /* The html and body elements cannot have any padding or margin. */
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: 'Raleway', 'Segoe UI', sans-serif;
+    font-family: 'Exo', 'Segoe UI', sans-serif;
 }
 
 a:link {

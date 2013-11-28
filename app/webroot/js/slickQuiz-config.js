@@ -81,7 +81,7 @@ var quizJSON = {
             "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
         },
         { // Question 1 - Multiple Choice, Single True Answer
-            "q": "The figure below shows the state transition diagram of an automaton. Which of the following is a bit string for which the automaton stops in the accepting (or final) state after the entire bit string has been read? Here, the double circle marked with \"q<sub>3</sub>\" represents the accepting state.<br/><img class='img-responsive' src='img/quiz/automata1.png'>",
+            "q": "The figure below shows the state transition diagram of an automaton. Which of the following is a bit string for which the automaton stops in the accepting (or final) state after the entire bit string has been read? Here, the double circle marked with \"q<sub>3</sub>\" represents the accepting state.<br/><br/><img class='img-responsive' src='img/quiz/automata1.png'>",
             "a": [
                 {"option": "1011", "correct": false},
                 {"option": "1100", "correct": false},
@@ -133,7 +133,7 @@ var quizJSON = {
             "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
         },
         { // Question 1 - Multiple Choice, Single True Answer
-            "q": "In the binary search tree shown below, which of the following is the appropriate sequence of nodes that are visited in an in-order traversal?<br /><img src='img/quiz/binarytree2.PNG' class='img-responsive' >",
+            "q": "In the binary search tree shown below, which of the following is the appropriate sequence of nodes that are visited in an in-order traversal?<br /><br/><img src='img/quiz/binarytree2.PNG' class='img-responsive' >",
             "a": [
                 {"option": "\\(A\\rightarrow B\\rightarrow C\\rightarrow D\\rightarrow E\\rightarrow F\\)", "correct": false},
                 {"option": "\\(A\\rightarrow B\\rightarrow D\\rightarrow E\\rightarrow C\\rightarrow F\\)", "correct": false},
@@ -261,7 +261,7 @@ var quizJSON = {
             "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
         },
         { // Question 1 - Multiple Choice, Single True Answer
-            "q": "The diagram below shows the state transition of the tasks in a multitasking computer system. When does a task in the running state move to the ready state?<br/><img src='img/quiz/statemachine1.PNG' class='img-responsive'> ",
+            "q": "The diagram below shows the state transition of the tasks in a multitasking computer system. When does a task in the running state move to the ready state?<br/><br/><img src='img/quiz/statemachine1.PNG' class='img-responsive'> ",
             "a": [
                 {"option": "When a process based on an I/O request is completed", "correct": false},
                 {"option": "When a task is generated", "correct": false},
@@ -346,7 +346,7 @@ var quizJSON = {
             "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
         },
         { // Question 1 - Multiple Choice, Single True Answer
-            "q": "The figure below shows a logic circuit representing a full adder. When 1, 0, and 1 are entered into x, y, and z respectively, which of the following is the appropriate combination of the output values of c (carry) and s (sum)?<br /><img src='img/quiz/logiccircuit1.PNG' class='img-responsive'>",
+            "q": "The figure below shows a logic circuit representing a full adder. When 1, 0, and 1 are entered into x, y, and z respectively, which of the following is the appropriate combination of the output values of c (carry) and s (sum)?<br /><br/><img src='img/quiz/logiccircuit1.PNG' class='img-responsive'>",
             "a": [
                 {"option": "c = 0; s = 0", "correct": false},
                 {"option": "c = 0; s = 1", "correct": false},
@@ -357,7 +357,7 @@ var quizJSON = {
             "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
         },
         { // Question 1 - Multiple Choice, Single True Answer
-            "q": "Which of the following is the logic gate that is equivalent to the logic circuit shown below?<br /><img src='img/quiz/logiccircuit2.PNG' class='img-responsive'>",
+            "q": "Which of the following is the logic gate that is equivalent to the logic circuit shown below?<br /><br/><img src='img/quiz/logiccircuit2.PNG' class='img-responsive'>",
             "a": [
                 {"option": "AND", "correct": false},
                 {"option": "NAND", "correct": false},
@@ -390,7 +390,7 @@ var quizJSON = {
             "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
         },
         { // Question 1 - Multiple Choice, Single True Answer
-            "q": "As shown in the class diagram below, there is a many-to-many association between the two classes Product and Warehouse. When there is a need to know how many of each product are stored in each warehouse, the association class StockHolding can be added between the two classes Product and Warehouse so as not to hide the original many-to-many relationship.<br /><img src='img/quiz/classdiagram1.PNG' class='img-responsive'><br />If the class diagram shown below is depicted using a full class instead of the association class, which of the following is the appropriate combination of cardinalities that are inserted into blanks A through D?<br /><img src='img/quiz/classdiagram1i.PNG' class='img-responsive'>" +
+            "q": "As shown in the class diagram below, there is a many-to-many association between the two classes Product and Warehouse. When there is a need to know how many of each product are stored in each warehouse, the association class StockHolding can be added between the two classes Product and Warehouse so as not to hide the original many-to-many relationship.<br /><br/><img src='img/quiz/classdiagram1.PNG' class='img-responsive'><br />If the class diagram shown below is depicted using a full class instead of the association class, which of the following is the appropriate combination of cardinalities that are inserted into blanks A through D?<br /><br/><img src='img/quiz/classdiagram1i.PNG' class='img-responsive'>" +
                 "<div class='table-responsive'><table class='table table-condensed'>" +
                 "<thead><tr><th>Choice</th><th>A</th><th>B</th><th>C</th><th>D</th></tr></thead>" +
                 "<tbody>" +

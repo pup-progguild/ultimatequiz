@@ -1,25 +1,15 @@
-Tapat at Sapat
+The Ultimate Quiz
 ==============
 
-[![Tapat at Sapat](http://tapatatsapat.azurewebsites.net/img/tas-logo-main.png)](http://tapatatsapat.azurewebsites.net/)
+Are you up for the next CCIS Quiz Show? Take the test and have the chance to make it as contestants of the upcoming Quiz Show that will happen this December 11, 2013!
 
-An interactive course for learning and knowing how the government of the Philippines plan to make and spend the budget.
-
-About the App
+Using
 -------------
 
-This app is powered by:
-* [Budget ng Bayan](http://budgetngbayan.com/)
-* [Kabantay ng Bayan](http://kabantayngbayan.ph) as part of the Open Data Initiative
-* [Data.gov.ph](http://data.gov.ph)
-* The [Department of Budget and Management](http://www.dbm.gov.ph)
-
-Also acknowledging the following libraries:
-* [D3.js](http://d3js.org) - Data-Driven Documents
+* [Bootstrap](http://getbootstrap.com) - Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.
 * [CakePHP](http://www.cakephp.org) - The rapid development PHP framework
-* [Reveal.js](http://lab.hakim.se/reveal-js) - The HTML Presentation Framework
-* [Moot.it](https://moot.it) - Forums and commenting re-imagined
 * [jQuery](http://jquery.com) - write less, do more. Also packed with [jQuery UI](http://jqueryui.com)
+*
 
 About Us
 --------
