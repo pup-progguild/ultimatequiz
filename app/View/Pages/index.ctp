@@ -17,13 +17,13 @@
 </div>
 <div id="registerform">
 	<div class="container">
-		<form class="form-signin">
+		<form class="form-signin" method="post" action="../quiz">
 			<h1 class="form-signin-heading text-center">Sign up!</h1>
 			<br />
-			<input type="text" class="form-control" placeholder="Team Name">
-			<input type="text" class="form-control" placeholder="Team Member # 1's Name">
-			<input type="text" class="form-control" placeholder="Team Member # 2's Name">
-			<input type="text" class="form-control" placeholder="Email address">
+			<input name="team" type="text" class="form-control" placeholder="Team Name">
+			<input name="member[]" type="text" class="form-control" placeholder="Team Member # 1's Name">
+			<input name="member[]" type="text" class="form-control" placeholder="Team Member # 2's Name">
+			<input name="email" type="text" class="form-control" placeholder="Email address">
 			<button class="btn btn-lg btn-primary btn-block" type="submit">Take the QUIZ</button>
 		</form>
 	</div>

@@ -68,6 +68,7 @@
             _quizHeader = _element + ' .quizHeader',
             _quizScore = _element + ' .quizScore',
             _quizLevel = _element + ' .quizLevel',
+            _quizTimer = _element + ' .quizTimer',
 
         // Top Level Quiz Element Objects
             $quizStarter = $(_quizStarter),
@@ -77,9 +78,14 @@
             $quizResultsCopy = $(_quizResultsCopy),
             $quizHeader = $(_quizHeader),
             $quizScore = $(_quizScore),
-            $quizLevel = $(_quizLevel)
+            $quizLevel = $(_quizLevel),
+            $quizTimer = $(_quizTimer)
             ;
 
+        // Temoto-kyun-kyun s00pur hackish attempt to code
+        var startDate;
+        var endDate;
+        var nowDate;
 
         // Reassign user-submitted deprecated options
         var depMsg = '';
@@ -247,10 +253,39 @@
 
             // Starts the quiz (hides start button and displays first question)
             startQuiz: function () {
+                function initTimer(h, m, s) {
+                    startDate = new Date();
+                    endDate = new Date();
+                    endDate.setHours(endDate.getHours() + h);
+                    endDate.setMinutes(endDate.getMinutes() + m);
+                    endDate.setSeconds(endDate.getSeconds() + s);
+
+                    updateTimer();
+                }
+
+                Number.pad = function(n, width, z) {
+                    z = z || '0';
+                    n = n + '';
+                    return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+                };
+
+                function updateTimer() {
+                    nowDate = new Date();
+                    if(nowDate >= endDate)
+                        alert("Time up!");
+                    else {
+                        var remDate = new Date(endDate - nowDate);
+                        $quizTimer.html(Number.pad(remDate.getMinutes(), 2) + ":" + Number.pad(remDate.getSeconds(), 2));
+                        setTimeout(updateTimer, 500);
+                    }
+                }
+
                 function start() {
                     var firstQuestion = $(_element + ' ' + _questions + ' li').first();
                     if (firstQuestion.length) {
-                        firstQuestion.fadeIn(500);
+                        firstQuestion.fadeIn(500, function() {
+                            initTimer(0, 0, 10);
+                        });
                     }
                 }
 

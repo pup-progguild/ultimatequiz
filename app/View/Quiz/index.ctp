@@ -7,7 +7,8 @@
 			<div class="quizHeader">
 				<!-- where the quiz main copy goes -->
 				<br />
-				<p><a class="btn btn-primary btn-lg startQuiz" href="#">Get Started!</a></p>
+                <p class="quizTimer"></p>
+				<p><a class="btn btn-primary btn-lg startQuiz">Get Started!</a></p>
 			</div>
 
 			<!-- where the quiz gets built -->
@@ -31,5 +32,8 @@ MathJax.Hub.Config({
 </script>
 <script type="text/javascript"
         src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/javascript">
+
 </script>
 <?php echo $this->Html->script([ 'slickQuiz-config', 'slickQuiz', 'quiz' ]); ?>

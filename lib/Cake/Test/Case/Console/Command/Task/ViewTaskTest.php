@@ -326,7 +326,7 @@ class ViewTaskTest extends CakeTestCase {
 
 		$this->Task->expects($this->at(0))->method('createFile')
 			->with(
-				TMP . 'ViewTaskComments' . DS . 'index.ctp',
+				TMP . 'ViewTaskComments' . DS . 'register.ctp',
 				$this->stringContains("\$viewTaskComment['Article']['title']")
 			);
 		$this->Task->bake('index', true);
@@ -389,7 +389,7 @@ class ViewTaskTest extends CakeTestCase {
 			);
 		$this->Task->expects($this->at(2))->method('createFile')
 			->with(
-				TMP . 'ViewTaskComments' . DS . 'index.ctp',
+				TMP . 'ViewTaskComments' . DS . 'register.ctp',
 				$this->stringContains('ViewTaskComment')
 			);
 
@@ -429,7 +429,7 @@ class ViewTaskTest extends CakeTestCase {
 
 		$this->Task->expects($this->at(0))->method('createFile')
 			->with(
-				TMP . 'ViewTaskComments' . DS . 'index.ctp',
+				TMP . 'ViewTaskComments' . DS . 'register.ctp',
 				$this->anything()
 			);
 		$this->Task->expects($this->at(1))->method('createFile')
@@ -455,7 +455,7 @@ class ViewTaskTest extends CakeTestCase {
 
 		$this->Task->expects($this->once())->method('createFile')
 			->with(
-				TMP . 'ViewTaskComments' . DS . 'index.ctp',
+				TMP . 'ViewTaskComments' . DS . 'register.ctp',
 				$this->anything()
 			);
 
@@ -490,7 +490,7 @@ class ViewTaskTest extends CakeTestCase {
 
 		$this->Task->expects($this->at(0))->method('createFile')
 			->with(
-				TMP . 'ViewTaskComments' . DS . 'index.ctp',
+				TMP . 'ViewTaskComments' . DS . 'register.ctp',
 				$this->anything()
 			);
 		$this->Task->expects($this->at(1))->method('createFile')
@@ -523,7 +523,7 @@ class ViewTaskTest extends CakeTestCase {
 
 		$this->Task->expects($this->at(0))->method('createFile')
 			->with(
-				TMP . 'ViewTaskComments' . DS . 'index.ctp',
+				TMP . 'ViewTaskComments' . DS . 'register.ctp',
 				$this->anything()
 			);
 		$this->Task->expects($this->at(1))->method('createFile')
@@ -580,7 +580,7 @@ class ViewTaskTest extends CakeTestCase {
 
 		$this->Task->expects($this->at(3))->method('createFile')
 			->with(
-				TMP . 'ViewTaskComments' . DS . 'index.ctp',
+				TMP . 'ViewTaskComments' . DS . 'register.ctp',
 				$this->stringContains('ViewTaskComment')
 			);
 

@@ -120,3 +120,9 @@ ul.responses li.correct p span {
 #orderedlist, #orderedlist li {
     list-style-type: decimal !important;
 }
+
+.quizTimer {
+    font-size: 36px;
+    display: inline-block;
+    float: right;
+}
