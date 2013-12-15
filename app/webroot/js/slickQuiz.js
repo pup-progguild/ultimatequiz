@@ -271,8 +271,10 @@
 
                 function updateTimer() {
                     nowDate = new Date();
-                    if(nowDate >= endDate)
+                    if(nowDate >= endDate) {
                         alert("Time up!");
+                        plugin.method.completeQuiz();
+                    }
                     else {
                         var remDate = new Date(endDate - nowDate);
                         $quizTimer.html(Number.pad(remDate.getMinutes(), 2) + ":" + Number.pad(remDate.getSeconds(), 2));
@@ -284,7 +286,7 @@
                     var firstQuestion = $(_element + ' ' + _questions + ' li').first();
                     if (firstQuestion.length) {
                         firstQuestion.fadeIn(500, function() {
-                            initTimer(0, 0, 10);
+                            initTimer(0, 5, 0);
                         });
                     }
                 }
